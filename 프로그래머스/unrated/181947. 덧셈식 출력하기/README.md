@@ -1,10 +1,10 @@
 # [level unrated] 덧셈식 출력하기 - 181947 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181947) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181947?language=java) 
 
 ### 성능 요약
 
-메모리: 32.3 MB, 시간: 58.39 ms
+메모리: 70 MB, 시간: 158.04 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 4일 18:32:59
+2023년 12월 5일 21:38:34
 
 ### 문제 설명
 
