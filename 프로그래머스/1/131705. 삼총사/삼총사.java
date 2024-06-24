@@ -1,23 +1,20 @@
 import java.util.*;
 class Solution {
-    static int answer, N;
-    static int[] selected;
- 
-    public int solution(int[] number) {
-        N = 3;
-        comb(0, 0, 0, number);
-        return answer;
-    }
- 
-    public static void comb(int cur, int cnt, int sum, int[] number) {
-        if (cnt == N) {
-            if (sum == 0)
-                answer++;
-            return;
+    static int solution(int[] number) {
+        int[] nums = Arrays.copyOfRange(number, 0, number.length);
+        int result = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                for (int k = j+1; k < nums.length; k++) {
+                    if(i == k || j == k) continue;
+
+                    if(0 == nums[i] + nums[j] + nums[k]) result++;
+
+                }
+
+            }
         }
- 
-        for (int i = cur; i < number.length; i++) {
-            comb(i + 1, cnt + 1, sum + number[i], number);
-        }
+        return result;
     }
 }
